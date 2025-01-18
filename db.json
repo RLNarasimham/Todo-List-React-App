@@ -1,0 +1,41 @@
+{
+  "todos": [],
+  "users": [
+    {
+      "id": "badf",
+      "username": "Lakshmi Narasimham Rallabandi",
+      "email": "narasimhamadi89@gmail.com",
+      "password": "hi123"
+    },
+    {
+      "id": "787a",
+      "username": "Lakshmi Narasimham Rallabandi",
+      "email": "narasimhamadi89@gmail.com",
+      "password": "hi123"
+    },
+    {
+      "id": "bee0",
+      "username": "Rallabandi Lakshmi Narasimham",
+      "email": "narasimham@example.com",
+      "password": "hi456"
+    },
+    {
+      "id": "f7b6",
+      "username": "rama",
+      "email": "rama@example.com",
+      "password": "hello123"
+    },
+    {
+      "id": "f2d2",
+      "username": "rama krishna veni",
+      "email": "sastry@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "eb68",
+      "username": "narasimham",
+      "email": "narasimham@mail.com",
+      "password": "hi456"
+    }
+  ]
+}

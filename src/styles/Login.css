@@ -1,0 +1,100 @@
+Container Styling
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.login-container p {
+  color: red;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Style for email and password input fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Takes up the full width of the container */
+  box-sizing: border-box; /* Includes padding and border in the width */
+  padding: 45px; /* Adjust padding for better usability */
+  font-size: 1rem; /* Set font size for consistency */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #1e90ff; /* Highlighted border color on focus */
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5); /* Subtle glow on focus */
+}
+
+
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+  align-items: right;
+}
+
+.btn {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #3742fa;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.mt-3 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mt-3 a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mt-3 a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+}
