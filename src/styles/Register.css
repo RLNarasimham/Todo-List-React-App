@@ -1,16 +1,28 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
 /* General card container styling */
-.card {
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border: none;
-  border-radius: 10px;
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
   padding: 20px;
-  margin: 20px auto;
+  background-color: #FACEFE;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   font-family: "Roboto", sans-serif;
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.register-container:hover {
   transform: translateY(-5px);
 }
 
@@ -24,6 +36,10 @@
 }
 
 /* Form Input Fields */
+.form-group {
+  margin-bottom: 15px;
+}
+
 .form-group label {
   font-size: 1rem;
   font-weight: 500;
@@ -31,30 +47,33 @@
 }
 
 .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 1rem;
+  outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
 }
 
 /* Submit Button */
 .btn-primary {
   background-color: #007bff;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-primary:hover {
@@ -97,13 +116,49 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 576px) {
-  .card {
+  .register-container {
     width: 90%;
     padding: 15px;
   }
 
+  .card-title {
+    font-size: 1.5rem;
+  }
+
   .btn-primary {
     font-size: 0.9rem;
-    padding: 8px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .register-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .register-container {
+    width: 70%;
+    padding: 25px;
+  }
+
+  .card-title {
+    font-size: 1.7rem;
+  }
+
+  .btn-primary {
+    font-size: 1.1rem;
+    padding: 14px;
   }
 }

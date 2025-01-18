@@ -62,37 +62,24 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div style={{width: '400px', marginTop: '2px'}}>
-      <h5 className="card-title" style={{ textAlign: 'center', fontSize: '45px', marginBottom: '5px' }}>Register</h5>
+    <div className="register-container">
+      <h5 className="card-title">Register</h5>
       <form onSubmit={handleSubmit}>
-        <div 
-        style={{
-          marginTop: '5px', display: 'flex', alignItems: 'center', gap: '10px'
-          }} className="form-group mb-3">
-          <label style={{textAlign: 'center',fontWeight: 'bold'}} htmlFor="name">UserName :</label>
+        <div className="form-group mb-3">
+          <label htmlFor="name">UserName :</label>
           <input
             type="text"
             className="form-control"
             id="name"
-            style={{
-              flex: '1', padding: '8px',
-              borderRadius: '5px',
-              border: '1px solid #ccc'
-            }}
             placeholder="Please Enter UserName"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
         </div>
-        <div style={{marginTop: '15px', display: 'flex', alignItems: 'center', gap: '10px'}} className="form-group mb-3">
-          <label style={{textAlign: 'center',fontWeight: 'bold'}} htmlFor="email">Email ID :</label>
+        <div className="form-group mb-3">
+          <label htmlFor="email">Email ID :</label>
           <input
-          style={{
-              flex: '1', padding: '8px',
-              borderRadius: '5px',
-              border: '1px solid #ccc'
-          }}
             type="email"
             className="form-control"
             id="email"
@@ -102,14 +89,9 @@ const RegistrationForm = () => {
             required
           />
         </div>
-        <div style={{marginTop: '15px', display: 'flex', alignItems: 'center', gap: '10px'}} className="form-group mb-3">
-          <label style={{textAlign: 'center',fontWeight: 'bold'}} htmlFor="password">Password : </label>
+        <div className="form-group mb-3">
+          <label htmlFor="password">Password :</label>
           <input
-            style={{
-              flex: '1', padding: '8px',
-              borderRadius: '5px',
-              border: '1px solid #ccc'
-            }}
             type="password"
             className="form-control"
             id="password"
@@ -119,14 +101,9 @@ const RegistrationForm = () => {
             required
           />
         </div>
-        <div style={{marginTop: '15px', display: 'flex', alignItems: 'center', gap: '10px'}} className="form-group mb-3">
-          <label style={{textAlign: 'center',fontWeight: 'bold'}} htmlFor="confirmPassword">Confirm Password : </label>
+        <div className="form-group mb-3">
+          <label htmlFor="confirmPassword">Confirm Password :</label>
           <input
-            style={{
-              flex: '1', padding: '8px',
-              borderRadius: '5px',
-              border: '1px solid #ccc'
-            }}
             type="password"
             className="form-control"
             id="confirmPassword"
@@ -135,11 +112,8 @@ const RegistrationForm = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
-        </div><br/>
-        <button type="submit" className="btn btn-primary"
-        style={{alignItems: 'center',paddingLeft: '10px 20px', width: '25%', borderRadius: '50px',
-          marginLeft: '140px'}}
-        >
+        </div>
+        <button type="submit" className="btn btn-primary">
           Register
         </button>
         {errorMessage && (
@@ -153,7 +127,7 @@ const RegistrationForm = () => {
           </div>
         )}
       </form>
-      <div style={{textAlign:'center'}} className="mt-3">
+      <div className="mt-3">
         <p>Already have an account? <Link to="/login">Login here</Link></p>
       </div>
     </div>

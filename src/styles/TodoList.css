@@ -6,6 +6,7 @@
 
 .todo-item {
   
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,7 +38,7 @@
 
 .edit-btn, 
 .delete-btn {
-  padding: 6px 12px;
+  justify-content: space-between;
   font-size: 14px;
   border: none;
   border-radius: 5px;

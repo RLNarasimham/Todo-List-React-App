@@ -1,9 +1,21 @@
-Container Styling
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FDFDFF;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
 .login-container {
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color:#80FFEC;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
@@ -12,23 +24,22 @@ Container Styling
 .login-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #333;
 }
 
 .login-container p {
   color: red;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
-/* Style for email and password input fields */
 input[type="email"],
 input[type="password"] {
-  width: 100%; /* Takes up the full width of the container */
-  box-sizing: border-box; /* Includes padding and border in the width */
-  padding: 45px; /* Adjust padding for better usability */
-  font-size: 1rem; /* Set font size for consistency */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
   outline: none;
@@ -37,23 +48,16 @@ input[type="password"] {
 
 input[type="email"]:focus,
 input[type="password"]:focus {
-  border-color: #1e90ff; /* Highlighted border color on focus */
-  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5); /* Subtle glow on focus */
-}
-
-
-.form-control {
-  width: 100%;
-  box-sizing: border-box;
-  align-items: right;
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
 }
 
 .btn {
   background-color: #1e90ff;
   color: #fff;
   border: none;
-  padding: 10px 15px;
-  font-size: 1rem;
+  padding: 12px;
+  font-size: 1.1rem;
   cursor: pointer;
   border-radius: 5px;
   width: 100%;
@@ -89,12 +93,60 @@ input[type="password"]:focus {
   text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+  body{
+    background-color: #FDFDFF;
+  }
+  .login-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .login-container {
+    width: 80%;
     padding: 15px;
   }
 
+  body{
+    color: #FDFDFF;
+  }
+
   .login-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .login-container {
+    width: 70%;
+    padding: 20px;
+  }
+
+  body{
+    background-color: #FDFDFF;
+  }
+
+  .login-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 1rem;
   }
 }

@@ -1,5 +1,5 @@
-import { FaHome, FaUserAlt, FaFileAlt, FaBriefcase, FaEnvelope, FaPowerOff } from 'react-icons/fa';
-import { FaBars } from "react-icons/fa"; // Four strikes icon for mega menu
+import { FaHome, FaPowerOff } from 'react-icons/fa';
+import { FaBars } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 import '../styles/Sidebar.css';
 
